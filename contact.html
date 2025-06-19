@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <label>Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+    <label for="subscribe">Yes</label><br><br>
+
+    <label for="topic">Select a topic:</label><br>
+    <select id="topic" name="topic">
+      <option value="feedback">Feedback</option>
+      <option value="support">Support</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
