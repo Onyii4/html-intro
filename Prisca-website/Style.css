@@ -60,8 +60,9 @@ body {
 
 .feedback-section button:hover {
   background-color: #c2185b;
-  transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 .feedback-section {
   text-align: center;
   margin: 40px auto;
@@ -79,6 +80,7 @@ textarea {
   outline: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 button {
   margin-top: 15px;
   padding: 12px 25px;
@@ -93,5 +95,45 @@ button {
 
 button:hover {
   background-color: deeppink;
-  transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.left img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+
+  .left img {
+    width: 100%;
+  }
+
+  .center-text {
+    text-align: center;
+  }
 }
