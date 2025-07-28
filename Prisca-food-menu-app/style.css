@@ -1,0 +1,155 @@
+/* Reset base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf5; /* Creamy soft background */
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #cc3300; /* Warm spicy red */
+  text-shadow: 1px 1px 0 #fff0e6;
+}
+
+/* Main container layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Menu Section */
+.menu {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cart Section */
+.cart {
+  flex: 1;
+  background-color: #fffdf7;
+  border: 2px dashed #ff9800;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 280px;
+  box-shadow: 0 0 8px rgba(255, 150, 0, 0.2);
+}
+
+.cart h2 {
+  color: #cc5500;
+  margin-bottom: 10px;
+}
+
+/* Food card */
+.food-card {
+  background-color: #fffaf0;
+  border: 1px solid #f5c38c;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(255, 174, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.food-card:hover {
+  transform: scale(1.02);
+}
+
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.food-card h3 {
+  color: #d84315;
+  margin-bottom: 5px;
+}
+
+.food-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.food-card select,
+.food-card button {
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.food-card select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.food-card button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.food-card button:hover {
+  background-color: #e65100;
+}
+
+/* Buttons in cart */
+.cart button {
+  margin-right: 10px;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #007f5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #005e43;
+}
+
+/* Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ffe0b2;
+  border-top: 5px solid #f57c00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Total amount */
+#total {
+  font-weight: bold;
+  color: #b71c1c;
+  font-size: 1.2rem;
+}
