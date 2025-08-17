@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="order-history.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+      <div class="logo">Agrotec</div>
+      <div class="user-section">
+        <span>Welcome, Ada</span>
+        <span class="notif">🔔</span>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+      </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">Agrotec</div>
+            <nav>
+                <a href="#dashboard"><span>🏠</span> Dashboard</a>
+                <a href="order-history.html" class="active"><span>📦</span> View Order</a>
+                <a href="#payment"><span>💳</span> Payment Method</a>
+                <a href="#settings"><span>⚙</span> Settings</a>
+            </nav>
+            <button class="logout">Log out →</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Title -->
+            <h1 class="page-title">Order History</h1>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <!-- Order List as Table -->
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="order-table-body">
+                    
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="order-history.js"></script>
+</body>
+</html>
